@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Arte - Tinta Libre</title>
+  <link rel="stylesheet" href="css/hoja.css">
+  <link rel="icon" href="img/favicon.ico" type="image/png">
+  <script src="js/funciones.js" defer></script>
+</head>
+<body class="form-publicar">
+  <header>
+    <nav>
+  <div class="logo">
+    <img src="img/logo_crema-03.png" alt="Logo Tinta Libre">
+  </div>
+
+  <button class="hamburguesa" id="hamburguesa">
+    ☰
+  </button>
+  <ul class="menu" id="menu">
+  <li><a href="index.html">Inicio</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="index.html">Galería</a></li>
+    <li><a href="index.html">Tienda</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="form-publicar">
+    <h2>Publicar tu arte</h2>
+    <p>Sube tu graffiti o ilustración para compartirla en la galería.</p>
+
+    <form id="formPublicarArte" style="max-width:500px;margin:30px auto;text-align:left;">
+      <label>Título de la obra:</label>
+      <input type="text" id="tituloArte" required style="width:100%;padding:8px;margin:8px 0;">
+
+      <label>Descripción:</label>
+      <textarea id="descripcionArte" required rows="3" style="width:100%;padding:8px;margin:8px 0;"></textarea>
+
+      <label>Imagen:</label>
+      <input type="file" id="imagenArte" accept="image/*" required style="margin:8px 0;">
+      <img id="previewArte" style="display:none;width:100%;margin-top:10px;border-radius:10px;">
+
+      <button type="submit" class="btn-publicar" style="margin-top:15px;">Publicar</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-medio">
+      <div class="footer-redes">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer-logo">
+        <img src="img/logo_crema-03.png" alt="Logo Tinta Libre">
+      </div>
+      <div class="footer-sitio">
+        <a href="index.html#blog">Blog Tinta Libre</a>
+        <a href="index.html#galeria">Galería Urbana</a>
+      </div>
+    </div>
+    <div class="footer-inferior">
+      <p>© 2025 Tinta Libre</p>
+      <p>Todos los derechos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>
