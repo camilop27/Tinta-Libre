@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Producto | Tinta Libre</title>
+  <link rel="stylesheet" href="css/hoja.css">
+  <link rel="icon" href="img/favicon.ico" type="image/png">
+  <script src="js/funciones.js" defer></script>
+</head>
+<body>
+  <header>
+   <nav>
+  <div class="logo">
+    <img src="img/logo_crema-03.png" alt="Logo Tinta Libre">
+  </div>
+
+  <button class="hamburguesa" id="hamburguesa">
+    ☰
+  </button>
+  <ul class="menu" id="menu">
+  <li><a href="index.html">Inicio</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="index.html">Galería</a></li>
+    <li><a href="index.html">Tienda</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="form-publicar">
+    <h2>Publicar un producto</h2>
+    <p>Comparte tus creaciones con la comunidad y apoya el arte local.</p>
+
+    <form id="formPublicarProducto" class="formulario">
+      <label for="nombreProducto">Nombre del producto:</label>
+      <input type="text" id="nombreProducto" placeholder="Ejemplo: Lienzo urbano" required>
+
+      <label for="descripcionProducto">Descripción:</label>
+      <textarea id="descripcionProducto" placeholder="Describe brevemente tu producto..." required></textarea>
+
+      <label for="precioProducto">Precio (COP):</label>
+      <input type="number" id="precioProducto" placeholder="Ejemplo: 20000 - Colocar sin puntos" min="0" required>
+
+      <label for="imagenProducto">Imagen del producto:</label>
+      <input type="file" id="imagenProducto" accept="image/*" required>
+
+      <img id="previewProducto" alt="Vista previa" style="display:none; width:100%; border-radius:10px; margin-top:10px;">
+
+      <button type="submit" class="btn-publicar">Publicar producto</button>
+    </form>
+  </main>
+
+    <footer>
+      <div class="footer-medio">
+        <div class="footer-redes">
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">TikTok</a>
+          <a href="#" target="_blank">YouTube</a>
+        </div>
+        <div class="footer-logo">
+          <img src="img/logo_crema-03.png" alt="Logo Tinta Libre">
+        </div>
+        <div class="footer-sitio">
+          <a href="#blog">Menú blog</a>
+          <a href="https://bogota.gov.co/servicios/tramites/autorizacion-de-lugares-para-la-practica-responsable-del-grafiti">Gestión permisos</a>
+        </div>
+      </div>
+      <div class="footer-inferior">
+        <p>© 2025 Tinta Libre</p>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </footer>
+</body>
+</html>
